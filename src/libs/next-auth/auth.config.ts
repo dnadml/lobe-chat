@@ -63,5 +63,5 @@ export default {
     // Force use JWT if server service is disabled
     strategy: NEXT_PUBLIC_ENABLED_SERVER_SERVICE ? NEXT_AUTH_SSO_SESSION_STRATEGY : 'jwt',
   },
-  trustHost: process.env?.AUTH_TRUST_HOST ? process.env.AUTH_TRUST_HOST === 'true' : true,
+  trustHost: true,
 } satisfies NextAuthConfig;

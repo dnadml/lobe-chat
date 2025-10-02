@@ -1,3 +1,2 @@
-import NextAuthNode from '@/libs/next-auth';
-
-export const { GET, POST } = NextAuthNode.handlers;
+import { handlers } from '@/libs/next-auth';
+export const { GET, POST } = handlers;
